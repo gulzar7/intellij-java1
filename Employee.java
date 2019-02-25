@@ -1,11 +1,22 @@
+import java.util.*;
 public class Employee{
-
+String name;
+String word;
+String newword;
 	public void disp()
 	{
-		String str = "Welcome Welcome TO TTN";
-		System.out.println( str.replace( 'W','Q' ) );
-		System.out.println( str.replaceFirst("We", "QE") );
-		System.out.println( str.replaceAll("We", "QA") );
+		Scanner sc = new Scanner(System.in);
+
+
+			System.out.println("enter the string : ");
+			name = sc.nextLine();
+		System.out.println("given string:" +name);
+		System.out.println("enter a word to replace:");
+		word = sc.nextLine();
+                System.out.println("enter a word to replace with:");
+		newword = sc.nextLine();
+		System.out.println( name.replace( word,newword ) );
+
 
 	}
 
