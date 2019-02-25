@@ -1,7 +1,10 @@
+import java.util.*;
 public class qus4 {
+
 	public void qus4(String input)
 	{
 		int totalChar = input.length();
+
 		int uc = 0;
 		int lc = 0;
 		int lcc= 0;
@@ -38,6 +41,10 @@ public class qus4 {
 
 	public static void main(String[] args) {
 		qus4 q4 = new qus4();
-		q4.qus4("Welcome to TO the NEW 100%");
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the string: ");
+		String str = sc.nextLine();
+		q4.qus4(str);
 	}
 }
