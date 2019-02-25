@@ -1,3 +1,4 @@
+import java.util.*;
 public class qus10 {
 	//adding two integer number
 	int add(int a, int b)
@@ -32,18 +33,39 @@ class qus10n {
 	public static void main (String[] args) {
 
 		qus10 ob = new qus10();
+		Scanner sc = new Scanner(System.in);
 
-		int sum1 = ob.add(1,2);
+
+		System.out.println("enter two integer numbers : ");
+
+
+
+
+
+        
+
+		int sum1 = ob.add(sc.nextInt(),sc.nextInt());
 		System.out.println("sum of the two integer value :" + sum1);
-		double sum2 = ob.add(1.2,2.3);
+
+		System.out.println("enter two decimal numbers : ");
+		double sum2 = ob.add(sc.nextDouble(),sc.nextDouble());
 		System.out.println("sum of the three integer value :" + sum2);
-		float mult1 = ob.multiply(3,5);
+
+		System.out.println("enter two float numbers : ");
+		float mult1 = ob.multiply(sc.nextFloat(),sc.nextFloat());
 		System.out.println("multiplication of two float value:" + mult1);
-		int mult2 = ob.multiply(5,8);
+
+		System.out.println("enter two integer numbers");
+		int mult2 = ob.multiply(sc.nextInt(),sc.nextInt());
 		System.out.println("multiplication of two integer value:" + mult2);
-		String conct1 = ob.concat("A","B");
-		System.out.println("concat of two string: " + conct1);
-		String conct2 = ob.concat("A","B", "C");
+
+		System.out.println("enter two strings :\n");
+
+		String conct1 = ob.concat(sc.nextLine(),sc.nextLine());
+		System.out.println("concat of two string:" + conct1);
+
+		System.out.println("enter three strings :");
+		String conct2 = ob.concat(sc.nextLine(),sc.nextLine(),sc.nextLine());
 		System.out.println("concat of three string: " + conct2);
 	}
 }
