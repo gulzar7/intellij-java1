@@ -1,11 +1,19 @@
+import java.util.*;
 public class qus3 {
+	String str;
+	String word;
 public void qus3()
 {
 
-	String str = "This is an Example Of The Character";
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the string:");
+	str = sc.nextLine();
 	System.out.println("Length Of String:" + str.length());
-	System.out.println("Length Of String Without a :" + str.replace("a", "").length());
-	int charcount = str.length() - str.replaceAll("a", "").length();
+	System.out.println("Enter a word to replace");
+	word = sc.nextLine();
+
+	System.out.println("Length Of String Without word :"+word+" is " + str.replace(word,"").length());
+	int charcount = str.length() - str.replaceAll(word, "").length();
 	System.out.println("Occurrence Of A Char In String: " + charcount);
 		}
 
@@ -14,5 +22,3 @@ public void qus3()
 		q3.qus3();
 	}
 	}
-
-
