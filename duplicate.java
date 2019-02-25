@@ -1,10 +1,15 @@
+import java.util.*;
 public class duplicate {
+	String value;
 	public void duplicate() {
 		int count = 1;
 
-		String value = "This is testing testing or or Program testing Program";
+		Scanner sc = new Scanner(System.in);
 
+		System.out.println("Enter the String:");
+		value = sc.nextLine();
 
+		System.out.println("given string is:" +value);
 		value = value.toLowerCase();
 		String item[] = value.split(" ");
 		for (int i = 0; i < item.length; i++) {
@@ -31,4 +36,3 @@ public class duplicate {
 		emp2.duplicate();
 	}
 }
-
